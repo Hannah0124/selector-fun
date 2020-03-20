@@ -90,7 +90,7 @@ article img:first-child {
 
 /* The First Top Cat Section (check the bottom of the HTML file) should have a Golden Background */
 /* QUESTION */
-/* #top-cats section:nth-child(2) {
+/* #top-cats:nth-child(2) {
    background-color: goldenrod;
 } */
 
@@ -104,7 +104,11 @@ article img:first-child {
    background-color: silver;
 } */
 
-#top-cats section:nth-of-type(2) {
+/* #top-cats section:nth-of-type(2) {
+   background-color: silver;
+} */
+
+#top-cats section:nth-of-type(even) {
    background-color: silver;
 }
 
@@ -118,7 +122,7 @@ main > section {
 }
 
 /* Every other Article's Post-Content Background Color to a Light Grey */
-article .post-content {
+article:nth-of-type(odd) .post-content{
    background-color: lightgray;
 }
 
